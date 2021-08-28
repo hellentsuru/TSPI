@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        nome = prompt("Qual o seu primeiro nome?");
+        sobrenome = prompt("Qual o seu sobrenome?");
+        cor = prompt("Qual cor voce deseja ver seu segundo nome? ")
+        nomeCompleto =`${nome} ${sobrenome}`;
+        N = Number(prompt("Digite um numero para repetir a mensagem: "));
+        for (i=1; i<=N; i++)
+            if(i % 2 ==0){
+                document.write(`<p style='color:${cor}'> ${i}  -  ${nomeCompleto} </p>`);
+            }else{
+            document.write(`<p> ${i} - ${nomeCompleto} </p>`);
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

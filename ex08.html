@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        texto = prompt("Digite um texto: ", "amor banana aranha peixe skate alto rico");
+        palavras = texto.split(" ");
+
+        vetorLetras = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","y","z"];
+        for (i=0; i<vetorLetras.length; i++) {
+            letra = vetorLetras[i]; 
+            achouPrimPalavra = false;
+            for (j=0; j<palavras.length; j++) {
+                if (palavras[j].charAt(0) == letra){
+                    if(achouPrimPalavra == false){
+                        document.write(`<h2>Palavras iniciadas com a letra ${letra}: </h2>`);
+                        achouPrimPalavra = true;
+                        document.write("<ul>");
+                    }
+                    document.write(`<li>${palavras[j]}</li>`);
+                }
+            }
+            if(achouPrimPalavra)  document.write("</ul>");
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
