@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2{
+            text-align: center;
+            padding:0 40px;
+        }
+        h2{
+            color: red;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+        }
+        img{
+            padding-left: 30px;
+            padding: 20px;
+        }
+        .style{
+            padding-top: 40px;
+        }
+    </style>
+    <script>
+        
+        document.write("<h1>JOGUE TRUCO</h1>");
+        document.write("<h2>Cartas sorteadas</h2><br>");
+
+        document.write(`<div><h1 class="style">Cartas do jogador 1: </h1>`);
+        for(i = 0; i <= 2; i++){
+            cartaSorteada = parseInt(Math.random()*27+1);
+            document.write(`<img src = "cartas/carta${cartaSorteada}.png">`);
+        }
+        document.write(`</div>`);
+
+        document.write(`<div><h1 class="style">Cartas do jogador 2: </h1>`);
+        for(i = 0; i <= 2; i++){
+            cartaSorteada = parseInt(Math.random()*27+1);
+            document.write(`<img src = "cartas/carta${cartaSorteada}.png">`);
+        }
+        document.write(`</div>`);
+
+        document.write(`<div><h1 class="style">Cartas do jogador 3: </h1>`);
+        for(i = 0; i <= 2; i++){
+            cartaSorteada = parseInt(Math.random()*27+1);
+            document.write(`<img src = "cartas/carta${cartaSorteada}.png">`);
+        }
+        document.write(`</div>`);
+
+        document.write(`<div><h1 class="style">Cartas do jogador 4: </h1>`);
+        for(i = 0; i <= 2; i++){
+            cartaSorteada = parseInt(Math.random()*27+1);
+            document.write(`<img src = "cartas/carta${cartaSorteada}.png">`);
+        }
+        document.write(`</div>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
