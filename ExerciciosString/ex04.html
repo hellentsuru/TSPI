@@ -8,10 +8,11 @@
     <script>
         nome = prompt("Seu nome completo", "Hellen Cristina Tsuru")
         vet_palavras = nome.split(" ");
+        index = nome.indexOf(" ");
         first = vet_palavras[0].toUpperCase();
-        rest = nome.toLowerCase();
+        rest = nome.slice(index+1);
         alert(`${first} ${rest}`);
-
+    
     </script>
 </head>
 <body>

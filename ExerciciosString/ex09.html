@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
-        //frase = prompt("Digite um texto: ", "a base do teto desaba");
 
-        var x = prompt(`Por favor, insira seu texto:`, "a base do teto desaba");
-        document.write(`<h1>Texto original: ${x}</h1>`);
-        function inverter(x) {
-        return x.split('').reverse().join('');
+        var frase = prompt(`Por favor, insira seu texto:`, "a base do teto desaba");
+
+        function palindromo(frase) {
+            var re = /[\W_]/g;  // para remover todos os caracteres não alfanuméricos (pontuação, espaços e símbolos)
+            var fraseMin = frase.toLowerCase().replace(re, '');
+            var fraseReversa = fraseMin.split('').reverse().join(''); 
+            return fraseReversa === fraseMin;
         }
-        document.write(`<h1>Texto invertido: ${inverter(x)}</h1>`);
+        alert(palindromo(frase));
         
-
     </script>
 </head>
 <body>
