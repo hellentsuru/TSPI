@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: gray;
+            width: 600px;
+            padding: 20px;
+        }
+        hr{
+            border-color: black;
+        }
+        h1{
+            padding: 0 30px;
+        }
+    </style>
+    <script>
+        pessoas = prompt("Qual o numero de pessoas?");
+        nomes = [];
+        for(i = 0; i < pessoas; i++){
+            nomes.push(prompt(`Qual o nome da pessoa ${i+1}:`));
+        }
+        document.write(`<h1>Ordem de apresentação dos grupos</h1>`);
+        document.write(`<div>`);
+        for(i = 1; i <= pessoas; i++){
+            selectedNames = parseInt(Math.random()*pessoas);
+            document.write(`<p>${i}º - ${nomes[selectedNames]}</p>`);
+            document.write(`<hr>`);
+
+        }
+        document.write(`</div>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

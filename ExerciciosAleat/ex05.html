@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        passageiros = prompt("Numero de poltronas?");
+        passageiros = prompt("Qual o numero de poltronas?");
         nome  =  [];
         idades = [];
         soma = 0;
@@ -21,7 +21,7 @@
         document.write(`Média das idades: ${media}`);
 
         idPassageiro = parseInt(Math.random()*passageiros);
-        document.write(`<p>Nome sorteado: ${idPassageiro}</p>`);
+        document.write(`<p>Nome sorteado: ${nome[idPassageiro]}</p>`);
         
 
     </script>

@@ -5,13 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box-externa{
+            margin: auto;
+            width: 600px;
+            overflow: auto;
+        }
+        .box-interna{
+            float: left;
+            padding: 0 20px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
     <script>
-        vet = ["pedra", "papel", "tesoura"];
-        jogador1 = parseInt(Math.random()*3+1);
-        jogador2 = parseInt(Math.random()*3+1);
+        jogo = ["pedra", "papel", "tesoura"];
+        jogador1 = parseInt(Math.random()*3);
+        jogador2 = parseInt(Math.random()*3);
         
-        document.write(`Jogador 1 \n <img src = "img/jogo${jogador1}.png">\n`);
-        document.write(`Jogador 2 \n <img src = "img/jogo${jogador2}.png">`);
+        document.write(`<div class="box-externa">`);
+        document.write(`<div class="box-interna"> <h1>Jogador 1</h1><img src = "img/jogo${jogador1}.png"> </div>`);
+        document.write(`<div class="box-interna"> <h1>Jogador 2<h1><img src = "img/jogo${jogador2}.png"> </div>`);
+        document.write(`</div>`);
+
+        if(jogador1 == 0 && jogador2 == 0 || jogador1 == 1 && jogador2 == 1 || jogador1 == 2 && jogador2 == 2){
+            document.write(`<h2>EMPATE</h2>`);
+        }else if(jogador1 == 0 && jogador2 == 2 || jogador1 == 1 && jogador2 == 0 || jogador1 == 2 && jogador2 == 1){
+            document.write(`<h2>Jogador 1 GANHOU!</h2>`);
+        }else if(jogador1 == 0 && jogador2 == 1 || jogador1 == 1 && jogador2 == 2 || jogador1 == 2 && jogador2 == 0){
+            document.write(`<h2>Jogador 2 GANHOU!</h2>`);
+        }
+
+        /*
+        if(jogador1 == 0){
+            if(jogador2 == 0){
+                document.write(`<h2>EMPATE</h2>`);
+            }else if(jogador2 == 1){
+                document.write(`<h2>Jogador 2 GANHOU!</h2>`);
+            }else if(jogador2 == 2){
+                document.write(`<h2>Jogador 1 GANHOU!</h2>`);
+            }
+        }
+        else if(jogador1 == 1){
+                if(jogador2 == 0){
+                    document.write(`<h2>Jogador 1 GANHOU!</h2>`);
+                }else if(jogador2 == 1){
+                    document.write(`<h2>EMPATE</h2>`);
+                }else if(jogador2 == 2){
+                    document.write(`<h2>Jogador 2 GANHOU!</h2>`);
+                }
+        }
+        else if(jogador1 == 2){
+                if(jogador2 == 0){
+                    document.write(`<h2>Jogador 2 GANHOU!</h2>`);
+                }else if(jogador2 == 1){
+                    document.write(`<h2>Jogador 1 GANHOU!</h2>`);
+                }else if(jogador2 == 2){
+                    document.write(`<h2>EMPATE</h2>`);
+                }
+        }
+       */
     </script>
 </head>
 <body>
