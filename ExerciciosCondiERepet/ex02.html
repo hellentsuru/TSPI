@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Exercício 2</title>
+    <style>
+        table, tr, td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            font-size: 18px;
+        }
+        div{
+           display: flex;
+           justify-content: center;
+       }
+        td{
+            padding: 5px 8px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var vetCodigo = ['P2', 'AP', 'POO1', 'FBD', 'JSB'];
+        var vetDisciplinas = ['Projeto Sistema Web MVC e SQL', 'Algoritmos e Programação', 'Programação Orientada a Objetos 1', 'Fundamento de Banco de Dados', 'JavaScript Básico'];
+
+        document.write(`<div>`);
+        document.write(`<table>
+            <tr>
+                <td><b>Código</b></td>    
+                <td><b>Disciplina</b></td>
+            </tr>`);
+        for(i = 0; i < vetCodigo.length; i++)    {
+            document.write(` 
+                            <tr>
+                                <td>${vetCodigo[i]}</td>    
+                                <td>${vetDisciplinas[i]}</td>
+                            </tr>
+            `)
+        }
+        document.write(`</table>`);
+        document.write(`</div>`);            
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
