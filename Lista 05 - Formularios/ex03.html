@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <script>
+        function resultado() {
+            nota1 = Number(document.getElementById("txtNota1").value);
+            nota2 = Number(document.getElementById("txtNota2").value);
+            notaFinal = nota1+nota2;
+            if(nota1 == ""){
+                alert("Valor inválido! Digite a nota 1: ");
+                document.getElementById("txtNota1").focus();
+            }else if(nota2 == ""){
+                alert("Valor inválido! Digite a nota 2: ");
+            }else if((notaFinal) >= 60){
+                alert(`Aprovado! Nota final: ${notaFinal} pontos`);
+            }else{
+                alert(`Reprovado! Faltam ${60 - notaFinal} pontos`);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <label for="">Nota(1ºbimestre):</label>
+        <input type="text" id="txtNota1">
+        <br><br>
+        <label for="">Nota(2ºbimestre):</label>
+        <input type="text" id="txtNota2">
+        <br><br>
+        <button onclick="resultado()">Resultado</button>
+    </form>
+</body>
+</html>

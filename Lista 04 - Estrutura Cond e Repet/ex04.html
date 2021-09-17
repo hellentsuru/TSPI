@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+
+    <style>
+        /* .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 400px;
+            width: 260px;
+            border: 3px solid blue;
+            border-radius: 70px 70px;
+        } */
+
+        /* .caixa1 {
+            height: 40px;
+            width: 90px;
+            border: 3px solid black;
+            position: relative;
+            top: 70px;
+            left: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        } */
+
+    </style>
+
+    <script>
+        qtd_passageiros = prompt("Qual o numero de passageiros?", "4");
+        passageiros = [];
+        homens = [];
+        mulheres = [];
+        sexo = [];
+        h = 0;
+        m = 0;
+
+        document.write(`<div class="container">`);
+
+        for (i = 0; i < qtd_passageiros; i++) {
+            passageiros[i] = prompt(`Digite o nome do ${i + 1} passageiro: `);
+            sexo[i] = prompt(`Digite o sexo do ${i + 1} passageiro: `);
+        }
+
+        for (i = 0; i < qtd_passageiros; i++) {
+            if (sexo[i] == "M" || sexo[i] == "m") {
+                homens[h] = passageiros[i];
+                h++;
+            } else {
+                mulheres[m] = passageiros[i];
+                m++;
+            }
+        }
+        homens = homens.sort();
+        mulheres = mulheres.sort();
+        
+        for (i = 0; i < homens.length; i++) {
+            
+            if (mulheres[i] != undefined){
+                document.write(`<p>${mulheres[i]}       `);
+            }
+            else document.write(`<p>        `);
+            if (homens[i] != undefined){
+                document.write(`${homens[i]}</p>`)
+            }
+            else document.write(`</p>`);
+        }
+        
+        document.write(`</div>`);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

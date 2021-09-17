@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.botoes{
+    text-align: center;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+}
+tr,td{
+    padding: 5px;
+}
+h1{
+    text-align: center;
+    font-size: 24px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    padding: 0 5px;
+    
+}
+.align{
+    margin-left: 67px;
+}
+#login{
+    padding-right: 30px;
+}
+#senha, #confirmacao{
+    width: 80px;
+}
+#confirmacao{
+    margin-bottom: 8px;
+}
+span{
+    color: red;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.espaco{
+    margin: 10px 5px;
+}
