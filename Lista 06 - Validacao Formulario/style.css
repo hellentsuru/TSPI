@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightcyan;
+}
+input[type="text"], textarea{
+    padding-right: 20px;
+    width: 90%;
+}
+h1{
+    padding-bottom: 30px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#genero{   
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;     
+    background-position: 218px center;  
+    width: 220px; 
+    height:30px; 
+    border:1px solid #ddd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+.teste{
+    display: block;
+}
+.box{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.botao{
+    padding: 8px;
+    margin: 15px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: aliceblue;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}

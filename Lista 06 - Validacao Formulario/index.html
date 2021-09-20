@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Atividade Avaliativa</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <form name="form1">
+            <h1>Foundation Bookstore</h1>
+            <label for="fname">Nome: </label>
+            <input type="text" name="NOME" id="fname">
+
+            <br><br>
+            <label for="lname">Sobrenome: </label>
+            <input type="text" name="SOBRENOME" id="lname">
+
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="text" name="EMAIL" id="email">
+
+            <br><br>
+            <label for="tel">Telefone: </label>
+            <input type="text" maxlength="11" name="TELEFONE" id="tel">
+
+            <br><br>
+            <label for="city">Cidade: </label>
+            <input type="text" name="CIDADE" id="city">
+
+            <br>
+            <div class="teste">
+            <p>Sexo: </p>
+                <input type="radio" id="masc" name="sexo">
+                <label for="masc">Masculino</label>
+                <input type="radio" id="fem" name="sexo">
+                <label for="fem">Feminino</label>
+            </div>
+            <br><br>
+
+            <label for="">Qual gênero você prefere?</label>
+            <br><br>
+            <select id="genero">
+                <option value="">Selecione</option>
+                <option value="">Romance</option>
+                <option value="">Ficção</option>
+                <option value="">Não-ficção</option>
+                <option value="">Biografia</option>
+                <option value="">Outro</option>
+            </select>
+
+            <br>
+            <p>Comentários:</p>
+            <textarea name="com" id="" cols="30" rows="5"></textarea>
+
+            <br><br>
+            <div class="button">
+                <input type="submit" class="botao" value="Cadastrar" onclick="validar()">
+                <input type="reset" class="botao" value="Limpar">
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
