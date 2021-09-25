@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box1 {
+    border: 2px solid black;
+
+    margin: 10px 5px;
+    padding: 15px 20px;
+    justify-content: center;
+}
+.box1:hover {
+    background-color: rgb(196, 214, 156);
+}
+img {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    padding: 10px;
+}
+h2 {
+    color: red;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 10px;
+}   
+
+
