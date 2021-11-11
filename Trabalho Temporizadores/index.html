@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de temporizadores</title>
+</head>
+    <style>
+        .container{
+            width: 1200px;
+            margin: auto;
+            
+        }
+        .container h1{
+            text-align: center;
+            color: red;
+            font-size: 33px;
+        }
+        .boxInterna{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+     }
+     .spacing{
+         padding-left: 70px;
+     }
+     .spacing h2{
+         color: green;
+         font-size: 28px;
+     }
+    </style>
+    <script>
+        nroImg = 1;
+        function firstCar(){
+            set = setInterval("changeInfo()", 1000);
+        }
+        function confInfo(nroImg, nome, potencia, garantia, consumo){
+            document.getElementById("slide").src = `imagens/0${nroImg}.jpg`;
+            document.getElementById("nome").innerHTML = nome;
+            document.getElementById("potencia").innerHTML = potencia;
+            document.getElementById("garantia").innerHTML = garantia;
+            document.getElementById("consumo").innerHTML = consumo;
+        }
+        
+        function changeInfo(){
+            nroImg++;
+            if(nroImg > 3)
+                nroImg = 1;
+
+            if(nroImg === 1)
+            confInfo('1', 'Corola', '155', '3', 'não foi informado');
+
+            if(nroImg === 2)
+                confInfo('2', 'Civic', '140', '3', '9,2Km/l');
+            
+            if(nroImg === 3)
+            confInfo('3', 'Focus', '172', '5', '8,5Km/l');  
+        }
+
+        function pause(){
+            clearInterval(set);
+        }
+    </script>
+<body onload="firstCar()">
+    <section class="container" >
+        <h1>Lançamentos 2014 - Carros Sedãs</h1>
+        <div class="boxInterna">
+            <div>
+                <img src="imagens/01.jpg" alt="" id="slide" onmouseenter="pause()" onmouseout="firstCar()">
+            </div>
+            <div class="spacing" onmouseout="firstCar()">
+                <h2>Características do Carro</h2>
+                <ul>
+                    <li>Nome: <span id="nome">Corola</span></li>
+                    <li>Potência do motor: <span id="potencia">155</span> cv</li>
+                    <li>Garantia: <span id="garantia">3</span> anos</li>
+                    <li>Consumo (cidade): <span id="consumo">não foi informado</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

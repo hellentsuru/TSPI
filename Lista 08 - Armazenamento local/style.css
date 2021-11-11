@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: helvetica;
+}
+body{
+    background-color: #46d246;
+}
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #8ff08f;
+    text-align: center;
+}
+input[type="text"], input[type="password"], .login, label{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+label{
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="password"], .login, input[type="reset"]{
+    border-bottom: 2px solid #46d246;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+input[type="submit"], input[type="reset"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #edfeed;
+    background-color: #68e368;
+    cursor: pointer;
+}
+.login:hover, input[type="button"]:hover, input[type="reset"]:hover, .cadastrar:hover{
+    background-color: #00a900;
+    transition: .5s;
+}
+p{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+}
+input[type="button"]{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: .8rem;
+    color: #edfeed;
+    background-color: #68e368;
+    cursor: pointer;
+}
+.limpar{
+    margin: 5px;
+}
+.cadastrar{
+    padding: 0px 10px;
+    font-size: 1rem;
+}
+
