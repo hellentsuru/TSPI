@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 11 - RegExp</title>
+    <script src="js/function.js"></script>
+    <script src="js/jwifi.js"></script>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .exerc{
+            margin: 15px 0;
+        }
+        input[type="text"]{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="exerc">
+                <label for="A">Exercício A:</label>
+                <input type="text" id="A" value="23/11/2045">
+                <input type="button" value="validar" onclick="validar('A')">
+            </div>
+            <div class="exerc">
+                <label for="B">Exercício B:</label>
+                <input type="text" id="B" value="142.245.234-89" onkeypress="inserirMascara('C', 'xxx.xxx.xxx-xx')">
+                <input type="button" value="validar" onclick="validar('B')">
+            </div>
+            <div class="exerc">
+                <label for="C">Exercício C:</label>
+                <input type="text" id="C" value="IFTM-345/123-AB">
+                <input type="button" value="validar" onclick="validar('C')">
+            </div>
+            <div class="exerc">
+                <label for="D">Exercício D:</label>
+                <input type="text" id="D" value="mt-45.612-iFtm" onkeypress="inserirMascara('D', 'xx-xx.xxx-xxxx')">
+                <input type="button" value="validar" onclick="validar('D')">
+            </div>
+            <div class="exerc">
+                <label for="E">Exercício E:</label>
+                <input type="text" id="E" value="MT-14.923-iFTM" onkeypress="inserirMascara('E', 'xx-xx.xxx-xxxx')">
+                <input type="button" value="validar" onclick="validar('E')">
+            </div>
+            <div class="exerc">
+                <label for="F">Exercício F:</label>
+                <input type="text" id="F" value="MT-78.632-i F T M">
+                <input type="button" value="validar" onclick="validar('F')">
+            </div>
+            <div class="exerc">
+                <label for="G">Exercício G:</label>
+                <input type="text" id="G" value="m T-13.579-iF T M Uberlândia">
+                <input type="button" value="validar" onclick="validar('G')">
+            </div>
+            <div class="exerc">
+                <label for="H">Exercício H:</label>
+                <input type="text" id="H" value="IFTM campus Uberlândia Centro">
+                <input type="button" value="validar" onclick="validar('H')">
+            </div>
+            <div class="exerc">
+                <label for="I">Exercício I:</label>
+                <input type="text" id="I" value="+55(34)99999-9999" onkeypress="inserirMascara('I', 'xx(xx)xxxxx-xxxx')">
+                <input type="button" value="validar" onclick="validar('I')">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
