@@ -44,6 +44,32 @@ function validar(exercicio) {
             padrao = /^\+\d{2}\(\d{2}\)\d{5}-\d{4}$/;
             idExe = "I";
             break;
+
+        case "J":
+            padrao = /^\(\d{2,3}\)\d{5}-\d{4}$/;
+            idExe = "J";
+            break;
+
+        case "K":
+            padrao = /^(1(\.|,)[3-9]|2(\.|,)[0-5])\d?$/;
+            idExe = "K";
+            break;
+
+        case "L":
+            padrao = /^R\$(\d{0,3})\.?(\d{0,3})\.?(\d{0,3})\.?(\d{0,3})\.?\d{0,3},[0-9][0-9]?$/;
+            idExe = "L";
+            break;
+
+        case "M":
+            padrao = /^(1\d|2[0-3]):[0-5]\d:[0-5]\d:\d\d$/;
+            idExe = "M";
+            break;
+
+        case "N":
+            padrao = /^[\w.-_]{5,}&[a-pA-P]{1,}\.[aeiou]{1,}(\.[A-Za-z0-5]{0,})?-\D{1,},[^\w]{2}\.[^ab01]{1,}$/;
+            idExe = "N";
+            break;
+
     }
 
     valor = document.getElementById(idExe).value;
