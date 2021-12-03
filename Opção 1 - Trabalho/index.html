@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/function.js"></script>
+    <title>Opção 1</title>
+</head>
+
+<body onload="carregaEstoque('estoque')">
+    <div class="container">
+        <div class="item">
+            <p>Itens em estoque: <span id="estoque">0</span></p>
+        </div>
+
+        <img src="img/carrinhoCompras.png" alt="">
+    </div>
+
+    <div class="cadastro">
+        <h2>Cadatro de novos produtos</h2>
+        <form >
+            <div class="br">
+                <label for="nomeProd" >Nome do produto:</label>
+                <input type="text" id="nomeProd">
+            </div>
+            <div class="br">
+                <label for="codProd" >Código do produto:</label>
+                <input type="text" id="codProd">
+            </div>
+            <div class="br">
+                <label for="qtdProd">Quantidade de produto:</label>
+                <select id="qtdProd">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <input type="button" value="Cadastrar" class="botoes" onclick="validacao('nomeProd','codProd','qtdProd')">
+            <input type="button" value="Ver estoque" class="botoes" onclick="window.open('verEstoque.html','_self')">
+            <input type="reset" value="Limpar" class="botoes">
+        </form>
+    </div>
+</body>
+
+</html>

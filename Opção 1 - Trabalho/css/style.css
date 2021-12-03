@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 75px;
+    padding-top: 10px;
+}
+.br {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 0; 
+}
+.cadastro{
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.item{
+    padding-top: 40px;
+    padding-left: 10px;
+}
+label{
+    padding:0 20px;
+}
+input[type="text"]{
+    text-align: right;
+}
+.botoes{
+    width: 30%;
+    background-color: black;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+form{
+    background-color: rgb(213,97,100);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    width: 400px;
+    margin: auto;
+}
+h2{
+    color: rgb(213,97,100);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
